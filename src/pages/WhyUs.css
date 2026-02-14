@@ -1,0 +1,45 @@
+.why-us {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.why-us h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: rgb(46, 125, 50);
+}
+
+.messages-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.message-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.message-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.message-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(46, 125, 50);
+}
+
+.message-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
