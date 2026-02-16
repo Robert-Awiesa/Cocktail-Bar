@@ -1,0 +1,46 @@
+.cocktail-details {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.details-card {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.details-image {
+  width: 400px;
+  border-radius: 12px;
+}
+
+.details-info h1 {
+  margin-bottom: 10px;
+}
+
+.details-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.details-info ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  margin-bottom: 30px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(46, 125, 50);
+  color: white;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: rgb(27, 94, 32);
+}
