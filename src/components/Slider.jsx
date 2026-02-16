@@ -14,14 +14,33 @@ function SliderManual() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="slider-manual">
-      <img src={slides[current]} alt="Slide" />
+  <div className="slider-manual">
+    {slides.map((slide, index) => (
+      <img
+        key={index}
+        src={slide}
+        alt="Slide"
+        className={index === current ? "slide active" : "slide"}
+      />
+    ))}
+
+    <div className="overlay"></div>
+
+    <div className="dots">
+      {slides.map((_, index) => (
+        <span
+          key={index}
+          className={index === current ? "dot active-dot" : "dot"}
+          onClick={() => setCurrent(index)}
+        ></span>
+      ))}
     </div>
-  );
+  </div>
+);
 }
 export default SliderManual;
