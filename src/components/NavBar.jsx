@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import cartIcon from '../assets/cart.avif';
 import './NavBar.css';
 
 function NavBar() {
@@ -7,10 +9,14 @@ function NavBar() {
       <img src={logo} alt="Tropical Sips Logo" />
 
       <nav className="nav">
-        <a href="/">Home</a>
-        <a href="/menu">Menu</a>
-        <a href="/about">About Us</a>
-        <a href="/contact">Contact</a>
+        <Link to="/">Home</Link>
+        <Link to="/menu">Menu</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/cart">
+          <img src={cartIcon} alt="Cart" className='cart-img' />
+          <p className='cart-count'>3</p>
+        </Link>
       </nav>
     </header>
   )
