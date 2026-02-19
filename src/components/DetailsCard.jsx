@@ -1,5 +1,6 @@
-
+import { useCart } from "../context/CartContext";
 function DetailsCard({cocktail, navigate}){
+  const {addToCart} = useCart();
   return(
     <>
       <div className="cocktail-details">
@@ -28,8 +29,7 @@ function DetailsCard({cocktail, navigate}){
             ))}
           </ul>
 
-          <button className="add-btn" onClick={() => console.log("Added to tray")
-              }
+          <button className="add-btn" onClick={() => addToCart(cocktail)}
               >
             Add to Tray
           </button>

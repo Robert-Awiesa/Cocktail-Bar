@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { cocktails } from "../../cocktails";
-
+import { useCart } from "../context/CartContext";
 function CocktailCard(){
+  const {addToCart} = useCart();
   return(
     <>
        <div className="cocktail-container">
@@ -22,7 +23,7 @@ function CocktailCard(){
             <button className="add-btn"
               onClick={(e) => {
                 e.preventDefault();
-                console.log("Added to tray");
+                addToCart(cocktail)
               }}
             >
               Add to Tray

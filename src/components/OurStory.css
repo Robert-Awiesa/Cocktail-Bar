@@ -1,0 +1,48 @@
+.our-story {
+  padding: 6rem 2rem;
+  background-color: #fffaf3;
+}
+
+.our-story-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.our-story-image {
+  flex: 1;
+}
+
+.our-story-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+.our-story-content {
+  flex: 1;
+}
+
+.our-story-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.story-underline {
+  width: 70px;
+  height: 4px;
+  background-color: #ff914d;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.our-story-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
