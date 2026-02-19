@@ -1,0 +1,146 @@
+.why-choose-us-tropical {
+  position: relative;
+  background: linear-gradient(135deg, #ffe6cc, #fff2f8);
+  padding: 100px 20px;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.why-choose-us-tropical .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.why-choose-us-tropical h2 {
+  font-size: 2.6rem;
+  margin-bottom: 60px;
+  color: #2a6f47;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 40px 25px;
+  width: 320px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 180%;
+  height: 180%;
+  top: -60%;
+  left: -60%;
+  background: radial-gradient(circle at center, rgba(125, 109, 109, 0.25), transparent 70%);
+  transform: rotate(45deg);
+  transition: transform 0.6s ease;
+}
+
+.card:hover::before {
+  transform: rotate(135deg);
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.06);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.icon-wrapper {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #2a6f47;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.fruit-bg {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.15;
+  width: 500px;
+  border-radius: 6px;
+  height: auto;
+  pointer-events: none;
+}
+
+.fruit-bg.top-left {
+  top: -10px;
+  left: -10px;
+}
+
+.fruit-bg.bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@media (max-width: 992px) {
+  .cards {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 25px;
+    padding: 35px 20px;
+  }
+
+  .icon-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .icon {
+    width: 55px;
+    height: 55px;
+  }
+}
