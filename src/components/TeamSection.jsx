@@ -1,36 +1,66 @@
 import "./TeamSection.css";
 
+
+import pic from "../assets/pic.jpg";
+import instagram from "../assets/socials/instagram.png";
+import linkedin from "../assets/socials/linkedin.svg";
+
+
 const teamMembers = [
   {
     name: "Alice Johnson",
     role: "Head Mixologist",
-    photo: "/assets/team/alice.jpg",
+    photo: pic,
     bio: "Passionate about creating signature cocktails with fresh ingredients.",
-    socials: {
-      instagram: "https://instagram.com/alice",
-      linkedin: "https://linkedin.com/in/alicejohnson",
-    },
+    socials: [
+      {
+        name: "instagram",
+        icon: instagram,
+        link: "https://instagram.com/alice"
+      },
+      {
+        name: "linkedin",
+        icon: linkedin,
+        link: "https://linkedin.com/alice"
+      }
+    ]
   },
   {
     name: "David Mensah",
     role: "Juice Specialist",
-    photo: "/assets/team/david.jpg",
+    photo: pic,
     bio: "Loves crafting refreshing and healthy juice blends.",
-    socials: {
-      instagram: "https://instagram.com/david",
-      linkedin: "https://linkedin.com/in/davidmensah",
-    },
+    socials: [
+      {
+        name: "instagram",
+        icon: instagram,
+        link: "https://instagram.com/david"
+      },
+      {
+        name: "linkedin",
+        icon: linkedin,
+        link: "https://linkedin.com/david"
+      }
+    ]
   },
   {
     name: "Sofia Clarke",
     role: "Bar Manager",
-    photo: "/assets/team/sofia.jpg",
+    photo: pic,
     bio: "Ensures smooth operations and an amazing customer experience.",
-    socials: {
-      instagram: "https://instagram.com/sofia",
-      linkedin: "https://linkedin.com/in/sofiaclarke",
-    },
-  },
+    socials: [
+      {
+        name: "instagram",
+        icon: instagram,
+        link: "https://instagram.com/sofia"
+      },
+      {
+        name: "linkedin",
+        icon: linkedin,
+        link: "https://linkedin.com/sofia"
+      }
+    ]
+  }
 ];
 
 function TeamSection() {
@@ -47,39 +77,34 @@ function TeamSection() {
       <div className="team-grid">
         {teamMembers.map((member, index) => (
           <div className="team-card" key={index}>
+            
             <div className="team-photo">
               <img src={member.photo} alt={member.name} />
+
+              <div className="team-socials">
+                {member.socials.map((social, i) => (
+                  <a
+                    key={i}
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={social.icon} alt={social.name} />
+                  </a>
+                ))}
+              </div>
             </div>
+
             <div className="team-info">
               <h3>{member.name}</h3>
               <p className="role">{member.role}</p>
               <p className="bio">{member.bio}</p>
-              <div className="team-socials">
-                {member.socials.instagram && (
-                  <a
-                    href={member.socials.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Instagram
-                  </a>
-                )}
-                {member.socials.linkedin && (
-                  <a
-                    href={member.socials.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                )}
-              </div>
             </div>
+
           </div>
         ))}
       </div>
     </section>
   );
 }
-
 export default TeamSection;

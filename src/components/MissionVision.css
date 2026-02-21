@@ -21,7 +21,9 @@
 
 .mission .text, .vision .text {
   flex: 1 1 400px;
-  margin-top: 46px;
+}
+.vision .text{
+  margin-top: 65px;
 }
 
 .mission .image, .vision .image {
