@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Menu from "../pages/Menu";
 import "./AboutHero.css";
 
 function AboutHero() {

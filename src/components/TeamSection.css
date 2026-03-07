@@ -7,7 +7,7 @@
 .team-intro h2 {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #1f1f1f;
+  color: rgb(46, 125, 50);
   margin-bottom: 15px;
 }
 
@@ -106,7 +106,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #222;
+  color: rgb(46, 125, 50);
 }
 
 .team-info .role {

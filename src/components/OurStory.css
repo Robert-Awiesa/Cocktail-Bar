@@ -29,7 +29,7 @@
 .our-story-content h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #222;
+  color: rgb(46, 125, 50);
 }
 
 .story-underline {
@@ -44,5 +44,5 @@
   font-size: 1.05rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #555;
+  color: rgb(85, 85, 85);
 }
