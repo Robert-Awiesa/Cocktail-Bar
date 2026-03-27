@@ -1,64 +1,137 @@
+/* GLOBAL FIX: Add this to your main App.css or index.css to prevent overlap */
+body {
+  padding-top: 80px; /* Matches header height */
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 80px;
-  padding: 0.2rem 1rem;
+  background-color: rgb(46, 125, 50);
+  z-index: 2000; /* Higher than everything else */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(46, 125, 50);
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-
-.header img {
+.logo-container img {
   height: 60px;
   width: auto;
 }
 
-.nav {
+/* NAV STYLES */
+.nav-menu {
   display: flex;
-  gap: 2rem;
-  padding: 10px 40px;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-.nav a {
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   transition: color 0.3s;
+  font-size: 1rem;
 }
-.nav a:hover{
+
+.nav-links a:hover {
   color: rgb(165, 214, 167);
 }
-.nav .cart-img {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: cover;
-  vertical-align: middle;
-  margin-top: -9px;
-  position: absolute;
-}
-.nav .cart-img:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
-}
-.cart-count{
+
+/* CART STYLES - FIXED POSITIONING */
+.cart-container {
   position: relative;
-  color: black;
-  right: -28px;
-  top: -18px;
-  background-color: white;
-  color: rgb(165, 214, 167);
-  padding: 2px 4px;
-  border-radius: 10px;
-  font-size: small;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
+.cart-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
 
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #ff5252;
+  color: white;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(46, 125, 50);
+}
 
+/* HAMBURGER ICON (Desktop: Hidden) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 2100;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hamburger to 'X' animation */
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 6px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -6px); }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen */
+    height: 100vh;
+    width: 280px;
+    background-color: rgb(35, 95, 38);
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+  }
+
+  .nav-menu.active {
+    right: 0; /* Slides in */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+}
