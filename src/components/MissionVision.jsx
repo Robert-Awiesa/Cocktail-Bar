@@ -16,13 +16,13 @@ function MissionVision() {
               that energize the body and lift the spirit, served with care and passion.
             </p>
           </div>
-          <div className="image">
+          <div className="image-mission">
             <img src={missionImage} alt="Mission" />
           </div>
         </div>
 
         <div className="vision">
-          <div className="image">
+          <div className="image-vision">
             <img src={visionImage} alt="Vision" />
           </div>
           <div className="text">

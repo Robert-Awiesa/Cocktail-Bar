@@ -46,3 +46,10 @@
   margin-bottom: 1.5rem;
   color: rgb(85, 85, 85);
 }
+
+@media (max-width: 768px) {
+  .our-story-container{
+    display: flex;
+    flex-direction: column;
+  }
+}

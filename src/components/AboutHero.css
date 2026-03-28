@@ -55,3 +55,8 @@
   background-color: #ff7a26;
   transform: translateY(-3px);
 }
+@media (max-width: 768px) {
+  .about-hero-content{
+    margin-top: 40px;
+}
+}

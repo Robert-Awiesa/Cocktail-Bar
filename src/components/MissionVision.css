@@ -26,11 +26,11 @@
   margin-top: 65px;
 }
 
-.mission .image, .vision .image {
+.mission .image-mission, .vision .image-vision {
   flex: 1 1 400px;
 }
 
-.mission .image img, .vision .image img {
+.mission .image-mission img, .vision .image-vision img {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
@@ -54,7 +54,7 @@
   }
 
   .mission .text, .vision .text, 
-  .mission .image, .vision .image {
+  .mission .image-mission, .vision .image-vision {
     flex: 1 1 100%;
   }
 
@@ -64,5 +64,10 @@
 
   .mission p, .vision p {
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .mission-vision-section{
+    margin-bottom: 0px;
   }
 }
