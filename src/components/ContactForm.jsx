@@ -39,12 +39,11 @@ function ContactForm() {
   return (
     <section className="contact-form-section">
       <div className="contact-form-container">
-
         <div className="contact-form-left">
           <h2>Send Us a Message</h2>
           <p>
-            Have a question, reservation request, or feedback?
-            Fill out the form and our team will respond shortly.
+            Have a question, reservation request, or feedback? Fill out the form
+            and our team will respond shortly.
           </p>
         </div>
 
@@ -55,7 +54,6 @@ function ContactForm() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="contact-form">
-
               <div className="form-group">
                 <input
                   type="text"
@@ -113,11 +111,9 @@ function ContactForm() {
               <button type="submit" className="submit-btn">
                 Send Message
               </button>
-
             </form>
           )}
         </div>
-
       </div>
     </section>
   );

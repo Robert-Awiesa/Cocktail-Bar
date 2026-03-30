@@ -5,15 +5,14 @@ function ContactInfo() {
   return (
     <section className="contact-info-section">
       <div className="contact-info-container">
-
         <div className="contact-info-left">
           <h2>Contact Information</h2>
           <p className="contact-subtext">
-            Visit us, call us, or send us an email. We’re always happy to serve you.
+            Visit us, call us, or send us an email. We’re always happy to serve
+            you.
           </p>
 
           <div className="info-cards">
-
             <div className="info-card">
               <h4>📍 Address</h4>
               <p>
@@ -23,7 +22,8 @@ function ContactInfo() {
                   rel="noopener noreferrer"
                 >
                   128 Tropical Sips
-  </a></p>
+                </a>
+              </p>
             </div>
 
             <div className="info-card">
@@ -47,10 +47,8 @@ function ContactInfo() {
                 Sat – Sun: 12:00 PM – 12:00 AM
               </p>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );

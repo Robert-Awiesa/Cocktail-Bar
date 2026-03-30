@@ -1,0 +1,145 @@
+.tracking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #f9fbf9;
+}
+
+.tracking-card {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.progress-bar-bg {
+  background: #e0e0e0;
+  height: 10px;
+  border-radius: 10px;
+  margin: 30px 0 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: #2e7d32;
+  height: 100%;
+  transition: width 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.status-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: 600;
+}
+
+.status-labels .active {
+  color: #2e7d32;
+}
+
+.order-details-box {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 25px 0;
+  text-align: left;
+}
+
+.ready-alert {
+  background: #e8f5e9;
+  border: 2px solid #2e7d32;
+  padding: 15px;
+  border-radius: 10px;
+  color: #2e7d32;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.status-labels .active {
+  color: #2e7d32;
+  font-size: 1rem;
+  text-shadow: 0 0 10px rgba(46, 125, 50, 0.3);
+  position: relative;
+}
+
+.status-labels .active::after {
+  content: " ●";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .tracking-container {
+    padding: 15px;
+    padding-top: 80px;
+    align-items: flex-start;
+  }
+
+  .tracking-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 95%;
+  }
+
+  .tracking-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .status-labels {
+    font-size: 0.7rem;
+  }
+
+  .status-labels .active {
+    font-size: 0.8rem;
+  }
+
+  .order-details-box {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .order-details-box p {
+    margin: 8px 0;
+  }
+
+  .ready-alert {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+}

@@ -13,8 +13,8 @@ function ContactHero() {
         <div className="contact-hero-content">
           <h1>Get In Touch</h1>
           <p>
-            We'd love to hear from you. Whether you're planning a visit,
-            booking a table, or just saying hello — we're here for you.
+            We'd love to hear from you. Whether you're planning a visit, booking
+            a table, or just saying hello — we're here for you.
           </p>
         </div>
       </div>

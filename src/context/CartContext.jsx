@@ -5,6 +5,9 @@ const CartContext = createContext();
 
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
+  const clearCart = () => {
+  setCart([]);
+};
 
   function addToCart(product) {
     const itemExists = cart.find(item => item.id === product.id);
@@ -96,6 +99,7 @@ export function CartProvider({ children }) {
     <CartContext.Provider
       value={{
         cart,
+        clearCart,
         addToCart,
         removeFromCart,
         increaseQuantity,

@@ -10,10 +10,7 @@
 .about-hero-overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.55)
-  );
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +53,7 @@
   transform: translateY(-3px);
 }
 @media (max-width: 768px) {
-  .about-hero-content{
+  .about-hero-content {
     margin-top: 40px;
-}
+  }
 }

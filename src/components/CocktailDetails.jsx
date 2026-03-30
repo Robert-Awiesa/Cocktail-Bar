@@ -13,12 +13,7 @@ function CocktailDetails() {
     return <h2 style={{ textAlign: "center" }}>Cocktail not found</h2>;
   }
 
-  return (
-    <DetailsCard
-      cocktail={cocktail}
-      navigate={navigate}
-    />
-  );
+  return <DetailsCard cocktail={cocktail} navigate={navigate} />;
 }
 
 export default CocktailDetails;

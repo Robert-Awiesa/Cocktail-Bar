@@ -12,7 +12,9 @@ function AboutHero() {
             At Tropical Sips, we craft every juice with fresh fruits and real
             ingredients — no shortcuts, no preservatives, just pure refreshment.
           </p>
-          <button className="about-hero-btn" onClick={() => navigate("/Menu")}>Explore Our Menu</button>
+          <button className="about-hero-btn" onClick={() => navigate("/Menu")}>
+            Explore Our Menu
+          </button>
         </div>
       </div>
     </section>

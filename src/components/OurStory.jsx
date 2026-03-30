@@ -5,7 +5,6 @@ function OurStory() {
   return (
     <section className="our-story">
       <div className="our-story-container">
-        
         <div className="our-story-image">
           <img src={storyImage} alt="Fresh fruits and juice preparation" />
         </div>
@@ -22,17 +21,17 @@ function OurStory() {
           </p>
 
           <p>
-            We carefully select every fruit, focusing on freshness, quality,
-            and natural sweetness. No artificial flavors. No preservatives.
-            Just real ingredients crafted with care.
+            We carefully select every fruit, focusing on freshness, quality, and
+            natural sweetness. No artificial flavors. No preservatives. Just
+            real ingredients crafted with care.
           </p>
 
           <p>
-            Today, Tropical Sips is more than a juice and Cocktail bar — it’s a community of
-            people choosing better, fresher, and more vibrant living.
+            Today, Tropical Sips is more than a juice and Cocktail bar — it’s a
+            community of people choosing better, fresher, and more vibrant
+            living.
           </p>
         </div>
-
       </div>
     </section>
   );

@@ -1,6 +1,9 @@
 import "./Cart.css";
 import { useCart } from "../context/CartContext";
+import { useNavigate } from "react-router-dom";
+
 function Cart() {
+  const navigate = useNavigate();
   const {
     cart,
     increaseQuantity,
@@ -68,8 +71,7 @@ function Cart() {
             <span>Total</span>
             <span>GHS {total.toFixed(2)}</span>
           </div>
-
-          <button className="checkout-btn">
+          <button className="checkout-btn" onClick={() => navigate("/checkout")}>
             Proceed to Checkout
           </button>
         </div>

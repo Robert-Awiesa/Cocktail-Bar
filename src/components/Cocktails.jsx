@@ -1,10 +1,8 @@
-import CocktailCard from './CocktailCard';
-import './Cocktails.css';
+import CocktailCard from "./CocktailCard";
+import "./Cocktails.css";
 
-function Cocktails(){
-  return(
-   <CocktailCard />
-  )
+function Cocktails() {
+  return <CocktailCard />;
 }
 
 export default Cocktails;

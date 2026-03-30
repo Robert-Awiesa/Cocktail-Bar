@@ -1,0 +1,109 @@
+.checkout-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-form h3 {
+  color: rgb(46, 125, 50);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box; /* Crucial for width: 100% */
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  outline: none;
+  border-color: rgb(46, 125, 50);
+}
+
+.order-type-toggle {
+  display: flex;
+  background: #f0f0f0;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.order-type-toggle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.order-type-toggle button.active {
+  background: white;
+  color: rgb(46, 125, 50);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form textarea {
+  min-height: 80px;
+  resize: vertical;
+  animation: fadeIn 0.3s ease;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(46, 125, 50);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+  margin-top: 10px;
+}
+
+.place-order-btn:hover {
+  background-color: rgb(35, 95, 38);
+}
+
+.place-order-btn:active {
+  transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .checkout-page {
+    width: 90%;
+    margin: 20px auto;
+    padding: 1.5rem;
+  }
+}

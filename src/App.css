@@ -1,3 +1,9 @@
-:root{
-  font-family: 'Nunito', sans-serif;
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main, .admin-dashboard, .order-tracking, .checkout-page {
+  flex: 1; 
 }

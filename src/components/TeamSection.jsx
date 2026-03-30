@@ -1,10 +1,8 @@
 import "./TeamSection.css";
 
-
 import pic from "../assets/pic.jpg";
 import instagram from "../assets/socials/instagram.png";
 import linkedin from "../assets/socials/linkedin.svg";
-
 
 const teamMembers = [
   {
@@ -16,14 +14,14 @@ const teamMembers = [
       {
         name: "instagram",
         icon: instagram,
-        link: "https://instagram.com/alice"
+        link: "https://instagram.com/alice",
       },
       {
         name: "linkedin",
         icon: linkedin,
-        link: "https://linkedin.com/alice"
-      }
-    ]
+        link: "https://linkedin.com/alice",
+      },
+    ],
   },
   {
     name: "David Mensah",
@@ -34,14 +32,14 @@ const teamMembers = [
       {
         name: "instagram",
         icon: instagram,
-        link: "https://instagram.com/david"
+        link: "https://instagram.com/david",
       },
       {
         name: "linkedin",
         icon: linkedin,
-        link: "https://linkedin.com/david"
-      }
-    ]
+        link: "https://linkedin.com/david",
+      },
+    ],
   },
   {
     name: "Sofia Clarke",
@@ -52,15 +50,15 @@ const teamMembers = [
       {
         name: "instagram",
         icon: instagram,
-        link: "https://instagram.com/sofia"
+        link: "https://instagram.com/sofia",
       },
       {
         name: "linkedin",
         icon: linkedin,
-        link: "https://linkedin.com/sofia"
-      }
-    ]
-  }
+        link: "https://linkedin.com/sofia",
+      },
+    ],
+  },
 ];
 
 function TeamSection() {
@@ -77,7 +75,6 @@ function TeamSection() {
       <div className="team-grid">
         {teamMembers.map((member, index) => (
           <div className="team-card" key={index}>
-            
             <div className="team-photo">
               <img src={member.photo} alt={member.name} />
 
@@ -100,7 +97,6 @@ function TeamSection() {
               <p className="role">{member.role}</p>
               <p className="bio">{member.bio}</p>
             </div>
-
           </div>
         ))}
       </div>
