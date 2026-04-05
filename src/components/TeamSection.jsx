@@ -1,8 +1,8 @@
 import "./TeamSection.css";
 
 import pic from "../assets/pic.jpg";
-import instagram from "../assets/socials/instagram.png";
-import linkedin from "../assets/socials/linkedin.svg";
+import instagram from "../assets/Socials/instagram.png";
+import linkedin from "../assets/Socials/linkedin.svg";
 
 const teamMembers = [
   {
