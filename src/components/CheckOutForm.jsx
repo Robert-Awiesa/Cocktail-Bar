@@ -2,7 +2,7 @@ import { useState } from "react";
 import { db } from "../firebase";
 import { useCart } from "../context/CartContext";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import "./CheckoutForm.css"; // The CSS we just wrote
+import "./CheckOutForm.css";
 import { useNavigate } from "react-router-dom";
 
 const CheckoutForm = ({ cartItems, totalAmount }) => {

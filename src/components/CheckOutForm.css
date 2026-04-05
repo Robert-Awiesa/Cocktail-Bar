@@ -23,7 +23,7 @@
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s;
-  box-sizing: border-box; /* Crucial for width: 100% */
+  box-sizing: border-box;
 }
 
 .checkout-form input:focus,
