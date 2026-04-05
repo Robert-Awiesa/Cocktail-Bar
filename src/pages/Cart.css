@@ -1,4 +1,5 @@
 .cart-page {
+  min-height: 100vh;
   padding: 40px 20px;
   font-family: 'Nunito', sans-serif;
   color: rgb(51, 51, 51);
