@@ -5,13 +5,14 @@ import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+//c1ce4d80ea48d53429329675a9a21fcfa47e38e6   AIzaSyC5wtdYPpQ-yNccHzR0Ium1qkKC6BVTuBY
 const firebaseConfig = {
-  apiKey: "AIzaSyC5wtdYPpQ-yNccHzR0Ium1qkKC6BVTuBY",
-  authDomain: "tropical-sips.firebaseapp.com",
-  projectId: "tropical-sips",
-  storageBucket: "tropical-sips.firebasestorage.app",
-  messagingSenderId: "627380176774",
-  appId: "1:627380176774:web:b146847e7949a7f04fce07"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID
 };
 
 // Initialize Firebase

@@ -1,6 +1,6 @@
 .tracking-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
@@ -97,7 +97,6 @@
 }
 
 .back-home {
-  display: inline-block;
   margin-top: 20px;
   color: #2e7d32;
   text-decoration: none;

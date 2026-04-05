@@ -1,4 +1,3 @@
-
 .cart-page {
   padding: 40px 20px;
   font-family: 'Nunito', sans-serif;
@@ -160,15 +159,33 @@
 }
 
 
-@media (max-width: 100px) {
+@media (max-width: 337px) {
   .cart-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  }
+  .cart-items{
+    width: 100%;
+
   }
 
   .cart-item {
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  
   }
+  .item-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart-item img{
+    width: 100%;
+    object-fit: fill;
+  }
+
 
   .item-total {
     text-align: left;
